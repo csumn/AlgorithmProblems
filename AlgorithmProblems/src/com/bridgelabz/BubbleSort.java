@@ -16,26 +16,26 @@ public class BubbleSort {
 		scanner.close();
 	}
 
-	void sort(int[] arr, int noOfElements) {
+	void sort(int[] array, int noOfElements) {
 		System.out.println("\nBefore Sorting\n");
 		for (int i = 0; i < noOfElements; i++) {
-			System.out.print(arr[i] + " ");
+			System.out.print(array[i] + " ");
 		}
 		System.out.println(" ");
 		System.out.println("\nAfter Sorting\n");
 		for (int i = 0; i < noOfElements - 1; i++) {
 			for (int j = 0; j < noOfElements - i - 1; j++) {
 				int temp;
-				if (arr[j] > arr[j + 1]) {
-					temp = arr[j];
-					arr[j] = arr[j + 1];
-					arr[j + 1] = temp;
+				if (array[j] > array[j + 1]) {
+					temp = array[j];
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
 				}
 			}
 
 		}
 		for (int i = 0; i < noOfElements; i++) {
-			System.out.print(arr[i] + " ");
+			System.out.print(array[i] + " ");
 		}
 	}
 
