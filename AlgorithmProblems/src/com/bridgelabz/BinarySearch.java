@@ -11,7 +11,6 @@ public class BinarySearch {
 	public static void main(String[] args) throws Exception {
 
 		List<String> file = new  ArrayList<String>();;
-		// Need to read file line by line
 		BufferedReader bufferedReader = new BufferedReader(new FileReader("C:\\Users\\csumn\\OneDrive\\Desktop\\Input.csv.txt"));
 		String saveLine;
 		while((saveLine = bufferedReader.readLine())!=null)
